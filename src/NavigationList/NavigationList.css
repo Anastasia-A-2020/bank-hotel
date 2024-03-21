@@ -1,0 +1,10 @@
+.nav {
+  flex-direction: flex-row;
+  justify-content: space-between;
+}
+
+.navMobile {
+  flex-direction: column;
+  gap: 40px;
+  font-size: 30px;
+}
