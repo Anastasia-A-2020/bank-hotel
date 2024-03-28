@@ -1,9 +1,12 @@
 import PropTypes from "prop-types";
 import { NavigationList } from "../../NavigationList/NavigationList";
 import MobileContacts from "../MobileContacts/MobileContacts";
+import { useSelector } from "react-redux";
 import "./MobileMenu.css";
 
-export default function MobileMenu({ isMobile, toggleIsShowMenu, isShowMenu }) {
+export default function MobileMenu({ toggleIsShowMenu, isShowMenu }) {
+  const isMobile = useSelector(store => store.app.isMobile);
+
   return (
     <div
       className={`container ${
@@ -18,7 +21,6 @@ export default function MobileMenu({ isMobile, toggleIsShowMenu, isShowMenu }) {
 }
 
 MobileMenu.propTypes = {
-  isMobile: PropTypes.bool.isRequired,
   toggleIsShowMenu: PropTypes.func.isRequired,
   isShowMenu: PropTypes.bool.isRequired,
 };

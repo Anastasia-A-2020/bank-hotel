@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { TfiClose } from "react-icons/tfi";
 import { Logo } from "../Logo/Logo";
@@ -6,7 +5,7 @@ import { useState } from "react";
 import MobileMenu from "../MobileMenu/MobileMenu";
 import "./MobileHeader.css";
 
-export function MobileHeader({ isMobile }) {
+export function MobileHeader() {
   const [isShowMenu, setIsShowMenu] = useState(false);
 
   const toggleIsShowMenu = () => {
@@ -26,7 +25,6 @@ export function MobileHeader({ isMobile }) {
         </button>
 
         <MobileMenu
-          isMobile={isMobile}
           toggleIsShowMenu={toggleIsShowMenu}
           isShowMenu={isShowMenu}
         />
@@ -34,7 +32,3 @@ export function MobileHeader({ isMobile }) {
     </>
   );
 }
-
-MobileHeader.propTypes = {
-  isMobile: PropTypes.bool.isRequired,
-};
