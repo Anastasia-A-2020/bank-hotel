@@ -3,7 +3,7 @@ import { TfiClose } from "react-icons/tfi";
 import { Logo } from "../Logo/Logo";
 import { useState } from "react";
 import MobileMenu from "../MobileMenu/MobileMenu";
-import "./MobileHeader.css";
+import "./MobileHeader.scss";
 
 export function MobileHeader() {
   const [isShowMenu, setIsShowMenu] = useState(false);

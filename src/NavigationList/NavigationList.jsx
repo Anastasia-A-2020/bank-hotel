@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
-import "./NavigationList.css";
+import "./NavigationList.scss";
 
 export function NavigationList({ isMobile }) {
   return (
     <ul
       className={`${
         isMobile ? "navMobile" : "nav"
-      } flex gap-x-[70px] text-white uppercase `}
+      } flex gap-x-[60px] text-white uppercase `}
     >
       <li className="cursor-pointer">
         <NavLink to="/">home</NavLink>

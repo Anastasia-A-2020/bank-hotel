@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { NavigationList } from "../../NavigationList/NavigationList";
 import MobileContacts from "../MobileContacts/MobileContacts";
 import { useSelector } from "react-redux";
-import "./MobileMenu.css";
+import "./MobileMenu.scss";
 
 export default function MobileMenu({ toggleIsShowMenu, isShowMenu }) {
   const isMobile = useSelector(store => store.app.isMobile);

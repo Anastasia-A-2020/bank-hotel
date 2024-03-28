@@ -1,6 +1,6 @@
 import { isMobile } from "react-device-detect";
 
-import "./App.css";
+import "./App.scss";
 import { MobileHeader } from "./components/MobileHeader/MobileHeader";
 import { Header } from "./components/Header/Header";
 import { AppRoutes } from "./AppRoutes";

@@ -1,8 +1,8 @@
-import "./MobileContacts.css";
+import "./MobileContacts.scss";
 
 export default function MobileContacts() {
   return (
-    <div className="flex flex-col items-center gap-y-[20px] mt-16 text-white">
+    <div className="flex flex-col items-center gap-y-[16px] mt-16 text-white">
       <a className="link relative" href="tel:+38 032 297 50 20">
         +38 032 297 50 20
       </a>
