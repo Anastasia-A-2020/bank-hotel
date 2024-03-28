@@ -24,9 +24,12 @@ export function MobileHeader({ isMobile }) {
             <HiOutlineMenuAlt4 size={37} className="icon" />
           )}
         </button>
-        {isShowMenu && (
-          <MobileMenu isMobile={isMobile} toggleIsShowMenu={toggleIsShowMenu} />
-        )}
+
+        <MobileMenu
+          isMobile={isMobile}
+          toggleIsShowMenu={toggleIsShowMenu}
+          isShowMenu={isShowMenu}
+        />
       </header>
     </>
   );

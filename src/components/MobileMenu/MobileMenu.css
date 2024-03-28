@@ -2,6 +2,16 @@
   position: absolute;
   top: 100%;
   left: 0;
+  width: 100%;
+
+  transform: translateX(-100%);
+  transition: transform 250ms ease-in-out;
+
   padding: 20px 10px 10px;
   background-color: #313f38;
+}
+
+.container--visible {
+  overflow: visible;
+  transform: translateX(0);
 }
