@@ -12,22 +12,34 @@ export function NavigationList() {
       } flex gap-x-[60px] text-white uppercase `}
     >
       <li className="cursor-pointer">
-        <NavLink to="/">home</NavLink>
+        <NavLink className="flex w-full" to="/">
+          home
+        </NavLink>
       </li>
       <li className="cursor-pointer">
-        <NavLink to="/about">about</NavLink>
+        <NavLink className="flex w-full" to="/about">
+          about
+        </NavLink>
       </li>
       <li className="cursor-pointer">
-        <NavLink to="/rooms">rooms</NavLink>
+        <NavLink className="flex w-full" to="/rooms">
+          rooms
+        </NavLink>
       </li>
       <li className="cursor-pointer">
-        <NavLink to="/restaurant">restaurant</NavLink>
+        <NavLink className="flex w-full" to="/restaurant">
+          restaurant
+        </NavLink>
       </li>
       <li className="cursor-pointer">
-        <NavLink to="/conference">conference</NavLink>
+        <NavLink className="flex w-full" to="/conference">
+          conference
+        </NavLink>
       </li>
       <li className="cursor-pointer">
-        <NavLink to="/contacts">contacts</NavLink>
+        <NavLink className="flex w-full" to="/contacts">
+          contacts
+        </NavLink>
       </li>
     </ul>
   );
