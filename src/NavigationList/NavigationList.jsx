@@ -1,8 +1,10 @@
-import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 import "./NavigationList.scss";
+import { useSelector } from "react-redux";
 
-export function NavigationList({ isMobile }) {
+export function NavigationList() {
+  const isMobile = useSelector(store => store.app.isMobile);
+
   return (
     <ul
       className={`${
@@ -30,11 +32,3 @@ export function NavigationList({ isMobile }) {
     </ul>
   );
 }
-
-NavigationList.propTypes = {
-  isMobile: PropTypes.bool,
-};
-
-NavigationList.defaultProps = {
-  isMobile: false,
-};
