@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import bookRoomImage from "../../assets/homePageImgs/HeroImg.jpg";
 import bookRoomImageDesk from "../../assets/homePageImgs/HeroImgDesk.jpg";
 import "./Hero.scss";
+import RoundButton from "./RoundButton/RoundButton";
 
 export default function Hero() {
   const isMobile = useSelector(store => store.app.isMobile);
@@ -39,9 +40,23 @@ export default function Hero() {
           <li className={isMobile ? "visually-hidden" : "hero__btn"}>
             <button type="button">Check out</button>
           </li>
-          <li className="hero__btn hero__btn--booking">
+          <li
+            className={
+              isMobile ? "visually-hidden " : "hero__btn hero__btn--accent"
+            }
+          >
             <button type="button">Book room</button>
           </li>
+          {isMobile && (
+            <li className="">
+              <RoundButton
+                text="Book room"
+                width="120px"
+                height="120px"
+                bg="#fcd043"
+              />
+            </li>
+          )}
         </ul>
       </div>
 

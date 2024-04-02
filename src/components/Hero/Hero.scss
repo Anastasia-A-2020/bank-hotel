@@ -44,22 +44,6 @@
     font-style: italic;
   }
 
-  &--booking {
-    border-radius: 50%;
-    clip-path: polygon(
-      50% 0%,
-      82% 11%,
-      100% 50%,
-      82% 89%,
-      50% 100%,
-      18% 89%,
-      0% 50%,
-      18% 11%
-    );
-    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
-    background-color: #fcd043;
-  }
-
   @media screen and (min-width: 678px) {
     width: 150px;
     height: 70px;
@@ -67,10 +51,7 @@
     background-color: #313f3880;
     transition: transform 250ms linear;
 
-    &--booking {
-      border-radius: 0;
-      clip-path: none;
-      box-shadow: none;
+    &--accent {
       color: #000;
       background-color: #fcd043;
     }
