@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import bookRoomImage from "../../assets/homePageImgs/HeroImg.jpg";
 import bookRoomImageDesk from "../../assets/homePageImgs/HeroImgDesk.jpg";
 import "./Hero.scss";
-import RoundButton from "./RoundButton/RoundButton";
+import RoundButton from "../RoundButton/RoundButton";
 
 export default function Hero() {
   const isMobile = useSelector(store => store.app.isMobile);
@@ -49,12 +49,7 @@ export default function Hero() {
           </li>
           {isMobile && (
             <li className="">
-              <RoundButton
-                text="Book room"
-                width="120px"
-                height="120px"
-                bg="#fcd043"
-              />
+              <RoundButton text="Book room" />
             </li>
           )}
         </ul>

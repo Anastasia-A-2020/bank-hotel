@@ -1,10 +1,15 @@
-.button--rounded {
+.button {
   border: none;
   outline: none;
+  width: 120px;
+  height: 120px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  background-color: #fcd043;
+  transition: transform 250ms linear;
 
   border-radius: 50%;
   clip-path: polygon(
@@ -17,5 +22,15 @@
     0% 50%,
     18% 11%
   );
+
   box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
+
+  &--circled {
+    color: #fff;
+    background-color: #e5e5e530;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }

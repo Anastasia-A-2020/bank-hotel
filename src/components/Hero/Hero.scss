@@ -7,15 +7,18 @@
   }
 }
 
-.hero__description--under::before {
-  content: "";
-  display: block;
-  width: 50%;
-  height: 1px;
-  margin-bottom: 24px;
-  background-color: #aaccb840;
-  margin-right: auto;
-  margin-left: auto;
+.hero__description {
+  font-style: normal;
+  &--under::before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 1px;
+    margin-bottom: 24px;
+    background-color: #aaccb840;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .hero__actions {
